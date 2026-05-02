@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router";
 import { matchesObj } from "./MatchesHistory";
 
 export default function HistoryEntity({ data }: { data: matchesObj }) {
@@ -7,7 +6,6 @@ export default function HistoryEntity({ data }: { data: matchesObj }) {
     ? "text-yellow-500 dark:text-yellow-200"
     : "text-red-500 dark:text-red-200";
   const bgColor = jeSuisGagne ? "bg-yellow-400 dark:bg-yellow-600" : "bg-red-500 dark:bg-red-400";
-  const navigate = useNavigate();
 
   return (
     <div

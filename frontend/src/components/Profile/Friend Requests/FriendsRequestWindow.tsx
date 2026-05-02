@@ -39,7 +39,6 @@ export default function FriendsRequestWindow({
   );
   const handleChange = useCallback(
     (
-      event: React.SyntheticEvent,
       newValue: "Requests" | "Pending" | "Blocked"
     ) => {
       setCurrentSection(newValue);
@@ -89,6 +88,7 @@ export default function FriendsRequestWindow({
               },
             }}
             value={currentSection}
+            //@ts-ignore
             onChange={handleChange}
           >
             <Tab value={"Requests"} label="Requests" />

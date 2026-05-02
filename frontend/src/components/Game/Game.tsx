@@ -37,6 +37,7 @@ export default function Game() {
 
   useEffect(() => {
     getToken().then((token) => {
+      //@ts-ignore
       let mySide: "player1" | "player2";
       gameSocket.current = io(
         `http://${import.meta.env.VITE_BACKEND_HOST}:${

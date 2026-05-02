@@ -164,6 +164,7 @@ export default function Play() {
               const customSettingsPropertys = getGameSettings();
               dispatch(
                 setGameSettings(
+                  //@ts-ignore
                   hasCustomSettings
                     ? { ...customSettingsPropertys, playWithBot: true }
                     : { playWithBot: true }

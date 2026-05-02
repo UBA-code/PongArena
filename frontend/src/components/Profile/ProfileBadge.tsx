@@ -1,5 +1,4 @@
 import profilePic from "../../assets/ProfileAssets/profilePic.png";
-import skill from "../../assets/ProfileAssets/skill.png";
 import facebook from "../../assets/ProfileAssets/Facebook.png";
 import twitter from "../../assets/ProfileAssets/twitter.png";
 import humanBigPic from "../../assets/ProfileAssets/Human.png";

@@ -1,4 +1,3 @@
-import { v4 as uuid4 } from "uuid";
 import closeBtn from "../../assets/NavAssets/close.png";
 import addIcon from "../../assets/NavAssets/add.png";
 import acceptIcon from "../../assets/NavAssets/accept.png";

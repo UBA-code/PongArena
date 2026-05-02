@@ -80,12 +80,13 @@ export default function RootLayout() {
       if (
         (isChannel &&
           (chatStats.currentConversation as channelObj).id ===
-            message.redirect) ||
+          message.redirect) ||
         (!isChannel &&
           (chatStats.currentConversation as chatObj).username ===
-            message.redirect &&
+          message.redirect &&
           appStats.currentPage === "Chat")
       ) {
+        //@ts-ignore
         dispatch(appendMessage(messageToAppend as messageConversationObj)); //! very danger move but i think it's safe cz i set to value or undefined
       } else {
         dispatch(
@@ -135,7 +136,7 @@ export default function RootLayout() {
     [dispatch]
   );
 
-  const handleRemoveCookie = useCallback((data) => {
+  const handleRemoveCookie = useCallback((data: any) => {
     document.cookie =
       data.cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
   }, []);
@@ -223,12 +224,11 @@ export default function RootLayout() {
       />
       <div
         className={`main-container transition-all px-2 sm:px-8 relative
-        ${
-          appStats.sideBarStatus
+        ${appStats.sideBarStatus
             ? "translate-x-[75%]\
           sm:translate-x-64 xl:w-[calc(100%-16rem)]"
             : "w-full"
-        }`}
+          }`}
       >
         <Nav
           sideBarProp={{

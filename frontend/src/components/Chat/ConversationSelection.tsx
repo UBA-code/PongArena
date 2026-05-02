@@ -15,7 +15,6 @@ import {
   reRenderConversationSelection,
   setConversationIsLoading,
   setSelectedChatFetchingId,
-  updateConversationMessages,
 } from "../../redux/slices/chatSlice";
 import { setAppIsLoading } from "../../redux/slices/appSlice";
 import { changeNotificationAlertValue } from "../../redux/slices/notificationSlice";

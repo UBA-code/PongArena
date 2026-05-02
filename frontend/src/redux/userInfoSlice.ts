@@ -22,6 +22,9 @@ const initialState: userObj = {
   isBanned: false,
   isCreator: false,
   isMuted: false,
+  rankAvatar: "",
+  x: "",
+  facebook: "",
 };
 
 const userInfoSlice = createSlice({

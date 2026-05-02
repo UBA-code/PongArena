@@ -51,7 +51,7 @@ export interface chanellConversationObj {
 }
 
 export interface emmitingObj {
-  id: number;
+  id: string;
   avatar: string;
   content: string;
   to: number | string; //* where the user will be redirected if he clicked
